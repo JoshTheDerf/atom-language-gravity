@@ -1,14 +1,13 @@
 {
   "name": "language-gravity",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Adds syntax highlighting for the Gravity language to Atom.",
   "author": "Joshua Bemenderfer",
-  "repository": "https://github.com/Tribex/atom-language-gravity",
-  "homepage": "https://github.com/Tribex/atom-language-gravity",
   "repository": {
     "type": "git",
     "url": "https://github.com/Tribex/atom-language-gravity.git"
   },
+  "homepage": "https://github.com/Tribex/atom-language-gravity",
   "bugs": {
     "url": "https://github.com/Tribex/atom-language-gravity/issues"
   },
