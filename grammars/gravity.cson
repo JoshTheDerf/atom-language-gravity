@@ -1,0 +1,79 @@
+'scopeName': 'source.gravity'
+'name': 'Gravity'
+'fileTypes': [
+  'gravity'
+]
+'patterns': [
+  {
+    'begin': '/\\*'
+    'end': '\\*/'
+    'name': 'comment.block.gravity'
+  }
+  {
+    'begin': '//'
+    'end': '$\\n?'
+    'name': 'comment.line.gravity'
+  }
+  {
+    'begin': '\''
+    'end': '\''
+    'name': 'string.quoted.single.gravity'
+  }
+  {
+    'begin': '"'
+    'end': '"'
+    'name': 'string.quoted.double.gravity'
+  }
+  {
+    'match': '\\b(in|or|is|var|and|not|func|enum|null|file|lazy|super|class|const|event|_func|_args|struct|repeat|public|static|extern|import|module|default|private|internal|undefined)\\b'
+    'name': 'keyword.reserved.gravity'
+  }
+  {
+    'match': '\\b(if|return|else|case|break|for|while|switch|continue)\\b'
+    'name': 'keyword.control.flow-control.gravity'
+  }
+  {
+    'match': '\\b(true|false)\\b'
+    'name': 'string.boolean.gravity'
+  }
+  {
+    'match': '\\#\\w+'
+    'name': 'meta.preprocessor.gravity'
+  }
+  {
+    'match': '\\b[A-Z_]+\\b'
+    'name': 'entity.other.attribute-name.gravity'
+  }
+  {
+    'match': '(-|\\.)?\\b[0-9]+(\\.[0-9]+)?\\b'
+    'name': 'constant.numeric.gravity'
+  }
+  {
+    'match': '(\\w|[\\+|-|\\*|/|%|=|!|\\^|~|\\||\\?|\\<|\\>|\\&])+(?=\\s*\\()'
+    'name': 'support.function.gravity'
+  }
+  {
+    'match': '\\+|-|\\*|/|%|=|!|\\^|~|\\||\\?|\\<|\\>|\\&'
+    'name': 'keyword.operator.gravity'
+  }
+  {
+    'match': '[<>]?[\\.]{1,3}[<>]?'
+    'name': 'keyword.operator.range.gravity'
+  }
+  {
+    'match': '\\w+(?=\\s*:)'
+    'name': 'variable.other.gravity'
+  }
+  {
+    'match': '(?<=\\w\\.)\\w+(?=\\.|\\s|,|;|\\)|\\?|\\+|\\-|=)'
+    'name': 'support.constant.gravity'
+  }
+  {
+    'match': '\\b([A-Z])\\w+\\b'
+    'name': 'entity.name.type.class.gravity'
+  }
+  {
+    'match': '\\w'
+    'name': 'variable.other.gravity'
+  }
+]
